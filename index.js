@@ -17,7 +17,7 @@ window.addEventListener('load', () => {
 
 
             async function getWeather() {
-                const response = await fetch(api);
+                const response = await fetch(api, {mode: 'cors',});
                 const data = await response.json();
                 console.log(data);
 
